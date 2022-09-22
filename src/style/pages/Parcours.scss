@@ -1,15 +1,22 @@
 section.parcours{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #282828;
-  div.container-parcours{
-    margin-left: 10%;
 
+  background-color: #282828;
+
+  div.container-photo{
+    img{
+      width: 30%;
+      height: 100vmin;
+      border-radius: 375px;
+      float: right;
+
+    }
+  }
+
+  div.container-parcours{
+    //margin-left: 10%;
+  margin-top: 20%;
     .timeline {
-      margin: 30px;
+      //margin: 30px;
       position: relative;
       li {
         display: flex;
@@ -20,7 +27,6 @@ section.parcours{
     .timeline--date {
       flex: 0 0 150px;
       color: #999;
-      font-family: 'Droid Serif', serif;
       font-size: 90%;
       text-align: right;
       margin-right: 50px;
@@ -94,7 +100,7 @@ section.parcours{
 
         &:after {
           content: '';
-          background: orange;
+          background: #008037;
           width: 15px;
           height: 15px;
           border-radius: 50%;
@@ -124,7 +130,7 @@ section.parcours{
       }
 
       .timeline--description {
-        color: orange;
+        color: #008037;
       }
 
     }
