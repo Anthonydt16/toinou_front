@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Inter/Inter-VariableFont_slnt,wght.ttf);
+}
+div.root{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body{
+  font-family:  font-1, serif;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #008037;
+}
+
+.nav-active{
+  text-decoration: underline;
+}
+nav{
+  text-decoration: none;
+}
