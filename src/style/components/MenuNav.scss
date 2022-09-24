@@ -1,7 +1,8 @@
-nav.menu{
-  position: absolute;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.65);
+@media screen and (min-width: 400px){
+  nav.menu{
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -9,33 +10,88 @@ nav.menu{
     align-items: center;
     justify-content: space-between;
 
-        div.container-menu{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            height: 60px
+    div.menuMobile{
+      display: none;
+      visibility: hidden;
+    }
+
+    div.container-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 60px
     ;
-        a{
-            margin: 10px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 121px;
-        }
+      a{
+        margin: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 121px;
+      }
 
     }
-  .container-logo{
+    .container-logo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 60px;
+      img{
+        width: 60px;
+        height: 60px;
+      }
+
+    }
+  }
+
+}
+@media screen and (max-width: 400px){
+  nav.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    height: 60px;
-    img{
-      width: 60px;
-      height: 60px;
+    flex-wrap: nowrap;
+    div.container-logo{
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    div.container-menu{
+      display: none;
+      visibility: hidden;
     }
 
+    .menuMobile:hover div.childMenu {
+      display: block;
+    }
+    div.menuMobile{
+
+      .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+      }
+      div.childMenu {
+        position: absolute;
+        display: none;
+        background: rgba(0, 0, 0, 0.65);
+        min-width: 50px;
+      }
+      div.childMenu a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+
+
+    }
   }
 }

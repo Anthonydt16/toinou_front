@@ -1,6 +1,16 @@
-section.home{
-  position:absolute; top:0px; left:0px;
-  height: 100vmin;
-  width: 100vmax;
-  background-image: url('../../image/crossfitHome.jpg');
+
+@media screen and (min-width: 500px){
+  section.home{
+    position:absolute; top:0px; left:0px;
+    height: 100vmin;
+    width: 100vmax;
+    background-image: url('../../image/crossfitHome.jpg');
+  }
+}
+
+@media screen and (max-width: 500px){
+  section.home{
+    position:absolute; top:0px; left:0px;
+    background-image: url('../../image/crossfitHome.jpg');
+  }
 }
