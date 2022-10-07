@@ -2,6 +2,7 @@ import React from 'react';
 import Cards from "../components/CardsProgramme";
 import MenuNav from "../components/MenuNav";
 import Antoine from "../image/antoine.JPG";
+import Footer from "../components/Footer";
 const Programmation = () => {
     return (
         <section className={"programmation"}>
@@ -21,7 +22,7 @@ const Programmation = () => {
                     )
                 }
             </div>
-
+            <Footer/>
         </section>
     );
 };

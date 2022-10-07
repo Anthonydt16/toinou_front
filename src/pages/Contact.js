@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuNav from "../components/MenuNav";
 import logo from "../image/1.png";
+import Footer from "../components/Footer";
 const Contact = () => {
     return (
         <section className={"container-Contact"}>
@@ -13,16 +14,18 @@ const Contact = () => {
                         <a HREF="mailto:toinou@gmail.com"> toinou@gmail.com</a>
                     </p>
                     <p>
-                        Numéro : +330707070707
+                        Téléphone :
+                        <a HREF="telto:+330707070707"> +330707070707</a>
                     </p>
                     <p>
-                        Pour me contacter Passer par le numéro de téléphone ou Email
+                        Instagram : <a HREF="https://www.instagram.com/antoine_straub/">@antoine_straub</a>
                     </p>
                 </div>
                 <div className={"BoxImg"}>
                     <img src={logo} alt={"le logo"}/>
                 </div>
             </div>
+            <Footer/>
         </section>
     );
 };

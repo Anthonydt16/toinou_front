@@ -5,7 +5,7 @@ const Aside = () => {
         <aside>
             <div className="container-aside">
                 <p>
-                    Anteponat reperiuntur facile videntur istum.
+                    Atteindre c'est objectif au SOMMET.
                 </p>
             </div>
         </aside>

@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuNav from "../components/MenuNav";
 import Antoine from '../image/antoineParcours.jpg'
+import Footer from "../components/Footer";
 const Parcours = () => {
     return (
         <section className={"parcours"}>
@@ -10,6 +11,7 @@ const Parcours = () => {
             <MenuNav/>
             <div className={"container"}>
                 <div className={"container-parcours"}>
+                    <h1>Pacours</h1>
                     <div className={"TimeLine"}>
                         <ul className="timeline timeline-vertical">
 
@@ -45,7 +47,7 @@ const Parcours = () => {
                 </div>
             </div>
 
-
+            <Footer/>
         </section>
     );
 };

@@ -21,7 +21,13 @@ section.programmation
 div.container-photo{
   text-align: center;
   img{
-    width: 20%;
+    @media screen and (min-width: 650px){
+      width: 20%;
+    }
+    @media screen and (max-width: 650px){
+      width: 40%;
+    }
+
     border-radius: 100%;
   }
 }
@@ -39,3 +45,4 @@ div.container-photo{
 
   }
 }
+
